@@ -12,4 +12,4 @@ export default {
 
 export const {{ cookiecutter.component_name }}DefaultProps: {{ cookiecutter.component_name }}Props = {}
 
-export const Default = () => <{{ cookiecutter.component_name }} {...{{ cookiecutter.component_name }}DefaultProps } />
+export const DefaultStory = () => <{{ cookiecutter.component_name }} {...{{ cookiecutter.component_name }}DefaultProps } />
