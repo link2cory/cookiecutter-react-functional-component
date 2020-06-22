@@ -11,4 +11,10 @@ def setup_stylesheets(stylesheet: str):
     else:
         os.remove('{{ cookiecutter.component_name }}.css')
 
+def setup_testing(testing: str):
+    # only keep the test files if requested
+    if testing != 'yes':
+        os.remove('{{ cookiecutter.component_name }}.spec.tsx')
+
 setup_stylesheets(context['stylesheet'])
+setup_testing(context['testing'])
